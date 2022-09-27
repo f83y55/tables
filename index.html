@@ -108,6 +108,15 @@
 #key0 {grid-column: 2; grid-row: 4; background-color: var(--bg-keyboard-1);}
 #keyReturn {grid-column: 3; grid-row: 4; background-color: var(--bg-keyboard-1);}
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
 
 #config {
   margin-top: 1em;
@@ -156,7 +165,7 @@
                <span id="disp_answer" class="display-var"></span> 
            </div>
        </div>
-       <div id="keyboard">
+       <div id="keyboard" class="noselect">
            <div id="key7" class="key">7</div>
            <div id="key8" class="key">8</div>
            <div id="key9" class="key">9</div>
